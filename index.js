@@ -103,7 +103,7 @@ function verifyToken(req, res, next){
 
     let token = header.split(' ')[1];
 
-    jwt.verify(token, 'secret', function(err, decoded){
+    jwt.verify(token, 'my_supercalifragilisticexpialidocious_password_that_even_I_wont_remember', function(err, decoded){
         if(err){
             res.send("Invalid Token")
         }
@@ -113,6 +113,6 @@ function verifyToken(req, res, next){
     })
 }
 
-app.get('/hello', verifyToken, (req, res) => {
+app.get('/hello', verifyToken, (req, res) => { //verifyToken is added here
     res.send('Hello World!')
   })
