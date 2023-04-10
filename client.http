@@ -1,0 +1,12 @@
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "lee",
+    "password": "passwordlee"
+}
+###
+GET http://localhost:3000/hello
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlZSIsInBhc3N3b3JkIjoicGFzc3dvcmRsZWUiLCJuYW1lIjoibGVlIHpoYW8gdGlhbiIsImVtYWlsIjoibHp0QGdtYWlsLmNvbSIsImlhdCI6MTY4MTEwOTU1MSwiZXhwIjoxNjgxMTEzMTUxfQ.If-yDBJ1ASH1pdBXMOeilIJyEDj2aPZXgDE97VmQzJg
+
+// By typing the password which is 'secret' at jwt.io is able to get back the token using online website
