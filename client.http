@@ -7,6 +7,8 @@ Content-Type: application/json
 }
 ###
 GET http://localhost:3000/hello
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlZSIsInBhc3N3b3JkIjoicGFzc3dvcmRsZWUiLCJuYW1lIjoibGVlIHpoYW8gdGlhbiIsImVtYWlsIjoibHp0QGdtYWlsLmNvbSIsImlhdCI6MTY4MTEwOTU1MSwiZXhwIjoxNjgxMTEzMTUxfQ.If-yDBJ1ASH1pdBXMOeilIJyEDj2aPZXgDE97VmQzJg
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxlZSIsInBhc3N3b3JkIjoicGFzc3dvcmRsZWUiLCJuYW1lIjoibGVlIHpoYW8gdGlhbiIsImVtYWlsIjoibHp0QGdtYWlsLmNvbSIsImlhdCI6MTY4NTQxMjIzNSwiZXhwIjoxNjg1NDE1ODM1fQ.ZXWJrCpWVmJA2Hh1jlR3Q1AAZ4EukA-rQC6TtCqIBTE
 
+
+// In order to make it work, the password set in generateToken() must same as verifyToken()
 // By typing the password which is 'secret' at jwt.io is able to get back the token using online website

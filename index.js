@@ -92,7 +92,7 @@ app.post('/register', (req, res) => {
 function generateToken(userProfile){
     return jwt.sign(
     userProfile,    //this is an obj
-    'secret',       //password
+    'my_supercalifragilisticexpialidocious_password_that_even_I_wont_remember',       //password
     { expiresIn: '1h' }); //{ expiresIn: 60 * 60 })
 }
 
